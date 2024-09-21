@@ -67,8 +67,8 @@ class VotingScreen extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.lock, color: Colors.grey), // Lock icon
-              SizedBox(width: 8), // Small space between lock and text
+              Icon(Icons.lock, color: Colors.grey),
+              SizedBox(width: 8),
               Text(
                 'lorem.org.my',
                 style: TextStyle(fontSize: 16, color: Colors.grey),
@@ -228,10 +228,10 @@ class VotingScreen extends StatelessWidget {
     color: color,
     child: ListTile(
       leading: Image.asset(
-        imagePath, // Set the image from assets
-        width: 40,  // Set the width of the image
-        height: 70, // Set the height of the image
-        fit: BoxFit.cover, // Adjust how the image fits the box
+        imagePath, 
+        width: 40,
+        height: 70,
+        fit: BoxFit.cover,
       ),
       title: Text(name, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),),
       subtitle: Text(votes, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w500),),
@@ -249,7 +249,7 @@ class VotingScreen extends StatelessWidget {
         SizedBox(height: 5),
         InkWell(
           onTap: () {
-            // Handle navigation to video
+            
           },
           child: Text(
             "https://www.youtube.com/watch?v=aLtXzKyNxkY",
@@ -277,7 +277,7 @@ class VotingScreen extends StatelessWidget {
   return Card(
     child: ListTile(
       leading: Image.asset(
-        imagePath, // Using the image asset here
+        imagePath,
         width: 50,
         height: 70,
         fit: BoxFit.cover,
